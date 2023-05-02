@@ -1,4 +1,3 @@
-pip install streamlit pandas
 import pandas as pd
 
 #read the dataset 
