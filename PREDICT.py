@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 #read the dataset 
-bbc_text=pd.read_csv("bbc-text.txt")
+bbc_text=pd.read_csv(r"C:\Users\hp\Desktop\predict\bbc-text.txt")
 bbc_text=bbc_text.rename(columns={'text':'News_Headline'},inplace=False)
 
 bbc_text.category=bbc_text.category.map({'tech':0,'business':1,'sport':2,'entertainment':3,'politics':4})
@@ -34,4 +34,3 @@ if st.button("Predict"):
   vec = vector.transform(input).toarray()
   print('Headline:', input)
   print(str(list(naivebayes.predict(vec))[0]).replace('0', 'TECH').replace('1', 'BUSINESS').replace('2', 'SPORTS').replace('3','ENTERTAINMENT').replace('4','POLITICS'))
-
