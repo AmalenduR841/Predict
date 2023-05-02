@@ -1,4 +1,4 @@
-1 pandas
+1 pandas==2.0
 2 sklearn.model_selection
 3 sklearn.feature_extraction.text
 4 sklearn.naive_bayes
