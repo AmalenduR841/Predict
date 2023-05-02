@@ -1,4 +1,2 @@
 pandas
-sklearn.model_selection
-sklearn.feature_extraction.text
-sklearn.naive_bayes
+scikit-learn
