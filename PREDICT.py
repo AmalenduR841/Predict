@@ -35,4 +35,4 @@ def app():
     vec = vector.transform(input).toarray()
     print('Headline:', input)
     print(str(list(naivebayes.predict(vec))[0]).replace('0', 'TECH').replace('1', 'BUSINESS').replace('2', 'SPORTS').replace('3','ENTERTAINMENT').replace('4','POLITICS'))
- app()
+app()
