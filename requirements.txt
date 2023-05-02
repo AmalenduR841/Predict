@@ -1,2 +1,2 @@
-pandas
+pandas==23.1.2
 scikit-learn
